@@ -21,6 +21,7 @@ public class ColaboradorController {
     @Autowired
 	ColaboradorRepository colaboradorRepository;
 
+    @CrossOrigin(origins = "http://localhost:3000")
     @GetMapping("/colaborador")
 	public ResponseEntity<List<Colaborador>> getAllColaborador() {
         try{
