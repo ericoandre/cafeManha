@@ -31,6 +31,7 @@ public class ColaboradorController {
 			return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}
+	@CrossOrigin(origins = "*")
     @PostMapping("/colaborador")
 	public ResponseEntity<Colaborador> createColaborador(@RequestBody Colaborador colaborador) {
         System.out.println(colaborador);
